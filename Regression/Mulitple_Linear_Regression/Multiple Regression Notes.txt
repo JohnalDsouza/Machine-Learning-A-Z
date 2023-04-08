@@ -20,6 +20,33 @@ STEP 3: Consider the predictor with the highest P-value. If P > SL, go to STEP 4
 STEP 4: Remove the predictor
 STEP 5: Fit model without this variable*
 FIN: Your Model is Ready
+* go to step 3
 
 *******************************************************************
+
+Forward Selection
+STEP 1: Select a significance level to enter the model (e.g. SL = 0.05)
+STEP 2: Fit all simple regression models y ~ xn Select the one with the lowest P-value
+STEP 3: Keep this variable and fit all possible models with one extra predictor added to the one(s) you
+already have
+STEP 4: Consider the predictor with the lowest P-value. If P < SL, go to STEP 3, otherwise go to FIN
+FIN: Keep the previous model
+
+*******************************************************************
+
+Backward Elimination(Fastest)
+STEP 1: Select a significance level to enter and to stay in the model
+e.g.: SLENTER = 0.05, SLSTAY = 0.05
+STEP 2: Perform the next step of Forward Selection (new variables must have: P < SLENTER to enter)
+STEP 3: Perform ALL steps of Backward Elimination (old variables must have P < SLSTAY to stay), go to step 2
+STEP 4: No new variables can enter and no old variables can exit
+FIN: Your Model Is Ready
+
+*******************************************************************
+
+All Possible Models
+STEP 1: Select a criterion of goodness of fit (e.g. Akaike criterion)
+STEP 2: Construct All Possible Regression Models: 2N-1 total combinations
+STEP 3: Select the one with the best criterion
+FIN: Your Model Is Ready
 
