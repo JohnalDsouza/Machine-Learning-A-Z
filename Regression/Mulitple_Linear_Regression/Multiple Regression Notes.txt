@@ -1,0 +1,25 @@
+P-Value
+We want to study the relationship between the height of students and their grades in a class of 100 students. We collect the data and perform a hypothesis test to determine whether there is a statistically significant relationship between height and grades.
+
+Our null hypothesis is that there is no significant relationship between height and grades, and our alternative hypothesis is that there is a significant relationship between height and grades.
+
+After performing the hypothesis test, we calculate a p-value of 0.03. This means that there is a 3% chance that the observed relationship between height and grades occurred by chance, and a 97% chance that it is a result of the variables we are studying.
+
+Since our significance level is 0.05, which is the maximum probability of making a Type I error (rejecting the null hypothesis when it is actually true), we can conclude that the p-value of 0.03 is less than the significance level, and therefore we can reject the null hypothesis in favor of the alternative hypothesis. This suggests that there is indeed a statistically significant relationship between height and grades in our dataset.
+
+In this way, p-value helps us to make informed decisions based on the statistical significance of our results, and helps to avoid drawing false conclusions from our data.
+
+In short, P-value < Significance Level, ie Regect the Hypothesis as it was not on chance.
+
+*******************************************************************
+
+Backward Elimination
+STEP 1: Select a significance level to stay in the model (e.g. SL = 0.05)
+STEP 2: Fit the full model with all possible predictors
+STEP 3: Consider the predictor with the highest P-value. If P > SL, go to STEP 4, otherwise go to FIN
+STEP 4: Remove the predictor
+STEP 5: Fit model without this variable*
+FIN: Your Model is Ready
+
+*******************************************************************
+
