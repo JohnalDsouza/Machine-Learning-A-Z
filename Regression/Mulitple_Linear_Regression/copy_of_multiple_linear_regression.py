@@ -57,7 +57,7 @@ np.set_printoptions(precision=2) # Display Numerical value till 2 decimals place
 print(np.concatenate((y_pred.reshape(len(y_pred),1),y_test.reshape(len(y_test),1)), axis = 1))
 # np.concatenate(y_pred.reshape(no of rows,no of column),y_pred.reshape(len(y_pred),1)), ) 
 # axis = 0=> vertical concatenation, 1 => horizontal concatination
-# to convert from horizontal to vertical
+# output y_pred is horizontal vector,to convert from horizontal to vertical we use reshape.
 
 print(regressor.predict([[1, 0, 0, 160000, 130000, 300000]]))
 # the values of the features were all input in a double pair of square brackets[[]]. 
