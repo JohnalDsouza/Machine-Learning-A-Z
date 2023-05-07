@@ -1,0 +1,6 @@
+LR: Ordinary Least Squares (Sum(y-ypred)^2 -> Min)
+SVR: Epsilon-Insensitive Tube (1/2*||w||^2+c sum(slack varibale) -> Min)
+     Slack Variables (these are the support vectors)
+     ->Epsilon if above tube
+     ->Episilon* if below tube
+     
