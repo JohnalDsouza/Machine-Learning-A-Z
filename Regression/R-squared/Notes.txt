@@ -1,0 +1,20 @@
+SSres = SUM(y - ypred)^2
+SStot = SUM(y - yavg)^2
+R^2 = 1 - SSres/SStot
+
+R2 = 1   Perfect fit
+R2 = 0.9 Very good
+R2 < 0.7 Not great
+R2 < 0.4 Terrible
+
+Problem:
+Now you decide to add a new feature,
+SStot doesnt change
+SSres will decrease or stay the same (SSres -> min)
+
+Now, if there is a case where the feature will increase but doesnt decrease the SSres value, so the coefficient of the feature -> 0. Thus as we keep adding features it may result in many coeff of features being Zero. thus degrading the R2 value.
+
+Solution: 
+Adjusted R^2 = 1 - (1-R^2)*(n-1)/(n-k-1)
+k = no. of indepedent variables 
+n = sample size
